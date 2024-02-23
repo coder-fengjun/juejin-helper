@@ -39,6 +39,7 @@ const main = async () => {
 
   // 登录
   try {
+    throw new Error('登录COOKIE:',COOKIE)
     await juejin.login(COOKIE)
 
     growth.userName = juejin.user.user_name
