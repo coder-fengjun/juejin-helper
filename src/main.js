@@ -36,10 +36,10 @@ ${growth.freeDrawed ? `恭喜抽中 ${growth.lotteryName}` : '今日已免费抽
 
 const main = async () => {
   const juejin = new Juejin()
-
+  console.log('登录COOKIE:',COOKIE)
   // 登录
   try {
-    throw new Error('登录COOKIE:',COOKIE)
+    console.log('登录COOKIE:',COOKIE)
     await juejin.login(COOKIE)
 
     growth.userName = juejin.user.user_name
